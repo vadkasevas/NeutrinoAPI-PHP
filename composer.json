@@ -22,11 +22,16 @@
         "apimatic/jsonmapper": "~1.2.0"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^2.7"
+        "squizlabs/php_codesniffer": "^2.7",
+        "phpunit/phpunit": "^5.7"
     },
     "autoload": {
         "psr-4": {
-            "NeutrinoAPILib\\": "src/"
-        }
+            "NeutrinoAPILib\\": "src/",
+            "Validator\\": "Validator/"
+        },
+        "classmap": [
+            "BankAwareInterface.php"
+        ]
     }
 }
